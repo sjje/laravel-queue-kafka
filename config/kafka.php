@@ -42,6 +42,7 @@ return [
      */
     'sasl_enable' => env('KAFKA_SASL_ENABLE', false),
 
+
     /*
      * File or directory path to CA certificate(s) for verifying the broker's key. example: storage_path('kafka.client.truststore.jks')
      */
