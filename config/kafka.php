@@ -40,12 +40,12 @@ return [
     /*
      * sasl authorization
      */
-    'sasl_enable' => false,
+    'sasl_enable' => env('sasl_enable', false),
 
     /*
      * File or directory path to CA certificate(s) for verifying the broker's key. example: storage_path('kafka.client.truststore.jks')
      */
-    'ssl_ca_location' => '',
+    'ssl_ca_location' => env('ssl_ca_location'),
 
     /*
      * SASL username for use with the PLAIN and SASL-SCRAM-.. mechanisms 
